@@ -1,0 +1,60 @@
+@import "src/variables";
+
+.search-container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: $first-color;
+}
+
+.search-input{
+  background-color: rgba(255, 255, 255, 0.78);
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 400px;
+  height: 30px;
+  border:1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 10px;
+  padding-left: 10px;
+  outline: none;
+  font-size: 16px;
+  color: $third-color;
+  &:focus{
+    border: 1px solid $third-color;
+    outline: none;
+  }
+
+}
+.dog{
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position: center center;
+  border-radius: 7px;
+  transition: all ease-in-out 0.5s;
+  &:hover{
+    transform: scale(1.05);
+  }
+  p{
+    color:$first-color;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #000
+  }
+}
+.dog-album{
+  display: flex;
+  max-width: 1300px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}

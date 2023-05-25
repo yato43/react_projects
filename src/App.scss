@@ -1,0 +1,35 @@
+@import "variables";
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: $first-color;
+}
+
+.active-link{
+  color: $fifes-color;
+}
+
+header {
+  z-index: 3;
+  width: 100%;
+  position: fixed;
+  height: 40px;
+  background-color: $fourth-color;
+  text-align: center;
+  padding-top: 12px;
+  a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: $second-color;
+    font-size: 20px;
+    transition: color ease-in-out 0.4s;
+    &:hover {
+      color: $fifes-color;
+    }
+  }
+}
