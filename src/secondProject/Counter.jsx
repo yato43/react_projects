@@ -9,29 +9,32 @@ class Counter extends Component {
             color: 'blue'
         }
     }
+
     increment = () => {
         this.setState({count: this.state.count + 1}, this.updateColor)
     }
     decrement = () => {
-        this.setState({count: this.state.count - 1},  this.updateColor)
+        this.setState({count: this.state.count - 1}, this.updateColor)
     }
     updateColor = () => {
-        if(this.state.count > 5){
+        if (this.state.count > 5) {
             this.setState({color: 'green'})
-        } else if(this.state.count < -5){
+        } else if (this.state.count < -5) {
             this.setState({color: 'red'})
-        }else{
+        } else {
             this.setState({color: 'blue'})
         }
     }
+
     render() {
         return (
             <div className='App'>
                 <div className="change-btn">
-                    <button onClick={this.increment}>+</button>
-                    <button onClick={this.decrement}>-</button>
+                    <button className='counter-btn' onClick={this.increment}>+</button>
+                    <button className='counter-btn' onClick={this.decrement}>-</button>
                 </div>
-                <p className="counter-value">Counter: <span style={{color: this.state.color}}>{this.state.count}</span></p>
+                <p className="counter-value">Counter: <span style={{color: this.state.color}}>{this.state.count}</span>
+                </p>
             </div>
         );
     }

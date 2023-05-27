@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink, Outlet} from "react-router-dom";
+
 const setActive = ({isActive}) => isActive ? 'active-link' : ''
 
 function Layout() {
@@ -10,6 +11,8 @@ function Layout() {
                 <NavLink to="/counter" className={setActive}>Counter</NavLink>
                 <NavLink to="temperature" className={setActive}>Temperature</NavLink>
                 <NavLink to="search" className={setActive}>Search</NavLink>
+                {/*<NavLink to="ToDo" className={setActive}>ToDo</NavLink>*/}
+                <NavLink to="BasicRegForm" className={setActive}>BasicRegForm</NavLink>
             </header>
 
             <Outlet/>

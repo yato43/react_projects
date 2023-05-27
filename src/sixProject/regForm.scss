@@ -1,0 +1,68 @@
+@import "src/variables";
+
+.basic-form-container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: $first-color;
+}
+.reg-form{
+  width: 400px;
+  height: 500px;
+  box-sizing: border-box;
+  background-color: $third-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-field{
+  margin: 25px auto 0 auto;
+  background-color: rgba(255, 255, 255, 0.78);
+  border:1px solid rgba(255, 255, 255, 0.78);
+  width: 350px;
+  height: 35px;
+  max-width: 350px;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border-radius: 5px;
+  display: block;
+  &:focus{
+    border: 1px solid $third-color;
+    outline: none;
+  }
+
+}
+
+.input-block{
+  margin-top: 25px;
+  height: 400px;
+}
+.submit-btn{
+  width: 350px;
+  height: 35px;
+  background-color: $second-color;
+  margin-bottom: 30px;
+  border: none;
+  font-size: 20px;
+
+}
+.err-msg{
+  margin: auto;
+  display: block;
+  width: 350px;
+  text-align: left;
+  color: #ff3a3a;
+}
+.success-msg{
+  width: 320px;
+  background-color: $fourth-color;
+  height: 40px;
+  margin: 25px auto;
+  font-size: 22px;
+  color:$first-color;
+}
