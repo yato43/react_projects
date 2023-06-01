@@ -7,6 +7,7 @@ import {Temperature} from "./thirdProject/Temperature";
 import Search from "./fourthProject/search";
 import ToDo from "./fiveProject/ToDo";
 import BasicRegForm from "./sixProject/BasicRegForm";
+import Quiz from "./sevenProject/Quiz";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                     <Route path="/search" element={<Search/>}/>
                     <Route path="/ToDo" element={<ToDo/>}/>
                     <Route path="/BasicRegForm" element={<BasicRegForm/>}/>
+                    <Route path="/quizzz" element={<Quiz/>}/>
                 </Route>
             </Routes>
         </>
